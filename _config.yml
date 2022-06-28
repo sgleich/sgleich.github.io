@@ -1,1 +1,6 @@
+title: Samantha J. Gleich
+subtitle: Using big data to study tiny organisms: Microbial ecology in the "omics" era
+logo: /img/infection.gif
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title
 theme: jekyll-theme-minimal
