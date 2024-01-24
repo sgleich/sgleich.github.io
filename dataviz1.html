@@ -9,8 +9,8 @@ layout: default
 <h3>Taxa Barplots - R</h3>
 <div class="container">
 <div class= "box">
-<div style="white-space: pre-wrap;">
-<pre>#install.packages('vegan')
+
+<pre style="white-space: pre-wrap; word-break: keep-all;">#install.packages('vegan')
 #install.packages('ggplot2')
 #install.packages('randomcoloR')
 #install.packages('reshape2')
@@ -49,7 +49,6 @@ duneMeltSum <- duneMelt %>% group_by(Group,Sample) %>% summarize(s=sum(value)) %
 
 # Plot
 ggplot(duneMeltSum,aes(x=Sample,y=s,fill=Group))+geom_bar(position="fill",stat="identity",color="grey20")+theme_classic()+xlab("Sample")+ylab("Relative Abundance")+scale_fill_manual(name="Taxonomic Group",values=c("red","blue","green","gold","grey"))+scale_x_continuous(breaks=seq(1:20),labels=seq(1:20))+theme(axis.text.x = element_text(angle=45,hjust =1))</pre>
-</div>
 </div>
 </div>
 <h3>Taxa Barplots Over Time - R (Above Example Continued)</h3>
