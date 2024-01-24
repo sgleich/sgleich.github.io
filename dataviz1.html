@@ -54,7 +54,7 @@ ggplot(duneMeltSum,aes(x=Sample,y=s,fill=Group))+geom_bar(position="fill",stat="
 <h3>Taxa Barplots Over Time - R (Above Example Continued)</h3>
 <div class="container">
 <div class= "box">
-<pre># Now let's assume that the sample numbers represent time points. We can remove some samples and use shading to show potential changes over time.
+<pre style="white-space: pre-wrap; word-break: keep-all;># Now let's assume that the sample numbers represent time points. We can remove some samples and use shading to show potential changes over time.
 keep <- c(1,7,11,17,20)
 duneMeltSum <- subset(duneMeltSum,Sample %in% keep)
 
@@ -65,7 +65,7 @@ ggplot(duneMeltSum,aes(x=Sample,y=s,fill=Group))+geom_area(alpha = 0.4, position
 <h3>Taxa Barplots - Python</h3>
 <div class="container">
 <div class= "box">
-<pre>code.</pre>
+<pre style="white-space: pre-wrap; word-break: keep-all;>code.</pre>
 </div>
 </div>
 
